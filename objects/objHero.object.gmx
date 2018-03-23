@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-5</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>objStats</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -27,12 +27,45 @@
             <kind>1</kind>
             <string>///Inicializando variaveis e chamando scripts
 phy_fixed_rotation = true;
-spd = 4;
+
+//velocidades
+spd = 6;
 hspd = 0;
 vspd = 0;
+
+//direções
+xdir = 0;
+ydir = 0;
+dir = 0;
+
 scr_teclas();
 estado = scr_movimento;
 image_speed = .2;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Voltar ao estado normal
+estado = scr_movimento;
+image_speed = 0.2;
 </string>
           </argument>
         </arguments>
@@ -57,7 +90,7 @@ image_speed = .2;
             <kind>1</kind>
             <string>
 script_execute(estado);
-
+event_inherited();
 </string>
           </argument>
         </arguments>
@@ -105,7 +138,7 @@ script_execute(estado);
             <kind>1</kind>
             <string>draw_self();
 
-draw_text(64,64, spd);
+draw_text(64,64, image_index);
 </string>
           </argument>
         </arguments>

@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprHeroParado</sprite>
+    <sprite>sprites\sprRolando</sprite>
     <sprite>sprites\sprHeroHorizontal</sprite>
     <sprite>sprites\sprParede</sprite>
   </sprites>
@@ -20,6 +21,7 @@
   <objects name="objects">
     <object>objects\objParede</object>
     <object>objects\objHero</object>
+    <object>objects\objStats</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

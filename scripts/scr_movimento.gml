@@ -1,13 +1,24 @@
 ///scr_movimento()
 scr_teclas();
 
+if(rolar) {
+    estado = scr_rolando;
+}
+
+
 //Pegando a direção
-var xdir = (direita - esquerda);
-var ydir = (baixo - cima);
+dir = point_direction(0, 0, xdir, ydir);
+
+//Pegando a distância
+if(xdir == 0 and ydir == 0){
+    len = 0;
+}else{
+    len = spd;
+}
 
 //Velocidade H e V
-hspd = xdir * spd;
-vspd = ydir * spd;
+hspd = lengthdir_x(len, dir);
+vspd = lengthdir_y(len, dir);
 
 //Movendo 
 phy_position_x += hspd;
