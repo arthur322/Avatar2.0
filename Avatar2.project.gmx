@@ -6,10 +6,18 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprHeroParado</sprite>
-    <sprite>sprites\sprRolando</sprite>
-    <sprite>sprites\sprHeroHorizontal</sprite>
+    <sprites name="Player">
+      <sprite>sprites\sprRolando</sprite>
+      <sprite>sprites\sprHeroHorizontal</sprite>
+      <sprite>sprites\sprHeroParado</sprite>
+      <sprite>sprites\sprHeroAtacando</sprite>
+      <sprite>sprites\sprHeroB</sprite>
+      <sprite>sprites\sprHeroD</sprite>
+      <sprite>sprites\sprHeroE</sprite>
+      <sprite>sprites\sprHeroC</sprite>
+    </sprites>
     <sprite>sprites\sprParede</sprite>
+    <sprite>sprites\sprEnemy</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -17,11 +25,14 @@
     <script>scripts\scr_teclas.gml</script>
     <script>scripts\scr_movimento.gml</script>
     <script>scripts\scr_rolando.gml</script>
+    <script>scripts\scr_atacando.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objParede</object>
     <object>objects\objHero</object>
+    <object>objects\objEnemy</object>
     <object>objects\objStats</object>
+    <object>objects\objAtaque</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

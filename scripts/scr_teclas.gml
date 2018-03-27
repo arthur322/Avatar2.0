@@ -3,7 +3,8 @@ esquerda = keyboard_check(vk_left) or keyboard_check(ord('A'));
 direita = keyboard_check(vk_right) or keyboard_check(ord('D'));
 cima = keyboard_check(vk_up) or keyboard_check(ord('W'));
 baixo = keyboard_check(vk_down) or keyboard_check(ord('S'));
-rolar = keyboard_check(ord('Z'));
+rolar = keyboard_check_pressed(ord('Z')) or keyboard_check_pressed(ord('Y'));
+atacar = keyboard_check_pressed(ord('X')) keyboard_check_pressed(ord('u'));
 
 //Pegando o eixo
 xdir = (direita - esquerda);

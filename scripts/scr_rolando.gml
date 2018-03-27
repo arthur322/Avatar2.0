@@ -1,5 +1,5 @@
 //Direção e velocidade
-len = spd * 3;
+len = spd * 2;
 
 //Velocidade H e V
 hspd = lengthdir_x(len, dir);
@@ -17,9 +17,9 @@ efeito.image_index = image_index;
 efeito.image_xscale = image_xscale;*/
 
 sprite_index = sprRolando;
-image_speed = 1.2;
+image_speed = 1.4;
 
 if(image_index >= 16){
-        estado = scr_movimento;
-        image_speed = 0.2;
-    }
+    estado = scr_movimento;
+    image_speed = 0.2;
+}
