@@ -18,6 +18,8 @@
     </sprites>
     <sprite>sprites\sprParede</sprite>
     <sprite>sprites\sprEnemy</sprite>
+    <sprite>sprites\sprEspada</sprite>
+    <sprite>sprites\sprDano</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -33,6 +35,7 @@
     <object>objects\objEnemy</object>
     <object>objects\objStats</object>
     <object>objects\objAtaque</object>
+    <object>objects\objDano</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

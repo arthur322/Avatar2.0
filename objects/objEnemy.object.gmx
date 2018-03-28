@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 image_speed = .2;
+spd = .5;
 </string>
           </argument>
         </arguments>
@@ -50,6 +51,11 @@ image_speed = .2;
           <argument>
             <kind>1</kind>
             <string>event_inherited();
+
+if(instance_exists(objHero)){
+    phy_position_x += sign(objHero.x - x) * spd;
+    phy_position_y += sign(objHero.y - y) * spd;
+}
 </string>
           </argument>
         </arguments>
@@ -62,7 +68,7 @@ image_speed = .2;
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
-  <PhysicsObjectLinearDamping>0.100000001490116</PhysicsObjectLinearDamping>
+  <PhysicsObjectLinearDamping>5</PhysicsObjectLinearDamping>
   <PhysicsObjectAngularDamping>0.100000001490116</PhysicsObjectAngularDamping>
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>

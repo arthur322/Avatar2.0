@@ -6,6 +6,7 @@ if(rolar && len != 0) {
 }
 
 if(atacar){
+    image_index = 0;
     estado = scr_atacando;
 }
 
@@ -29,18 +30,27 @@ phy_position_x += hspd;
 phy_position_y += vspd;
 
 //Controles de sprites
-image_speed = sign(len) * 1;
+//image_speed = sign(len) * 1;
 if(vspd == 0 and hspd == 0){
-    image_index = 0;
+    //image_index = 0;
+    sprite_index = sprHeroParado;
 }
 
 if(hspd > 0){
-    sprite_index = sprHeroD;
-    image_speed = .2;
+    sprite_index = sprHeroHorizontal;
+    //image_speed = .2;
+    image_xscale  = 1;
 }else if(hspd < 0){
-    sprite_index = sprHeroE;
-    image_speed = .2;
+    sprite_index = sprHeroHorizontal;
+    //image_speed = .2;
+    image_xscale = -1;
 }
+
+if(vspd <> 0){
+    sprite_index = sprHeroHorizontal;
+}
+
+/*
 if(vspd > 0){
     sprite_index = sprHeroB;
     image_speed = .2;
@@ -48,4 +58,4 @@ if(vspd > 0){
     sprite_index = sprHeroC;
     image_speed = .2;
 }
-
+*/
