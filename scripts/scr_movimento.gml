@@ -3,6 +3,7 @@ scr_teclas();
 
 if(rolar && len != 0) {
     estado = scr_rolando;
+    alarm[0] = room_speed / 3;
 }
 
 if(atacar){
@@ -17,8 +18,10 @@ dir = point_direction(0, 0, xdir, ydir);
 //Pegando a distância
 if(xdir == 0 and ydir == 0){
     len = 0;
+    image_index = 0;
 }else{
     len = spd;
+    scr_visao();
 }
 
 //Velocidade H e V
@@ -30,32 +33,20 @@ phy_position_x += hspd;
 phy_position_y += vspd;
 
 //Controles de sprites
-//image_speed = sign(len) * 1;
-if(vspd == 0 and hspd == 0){
-    //image_index = 0;
-    sprite_index = sprHeroParado;
-}
+image_speed = sign(len) * 0.5;
 
-if(hspd > 0){
-    sprite_index = sprHeroHorizontal;
-    //image_speed = .2;
-    image_xscale  = 1;
-}else if(hspd < 0){
-    sprite_index = sprHeroHorizontal;
-    //image_speed = .2;
-    image_xscale = -1;
-}
 
-if(vspd <> 0){
-    sprite_index = sprHeroHorizontal;
+switch(olhando){
+    case DIREITA:
+        sprite_index = sprHeroD;
+        break;
+    case BAIXO:
+        sprite_index = sprHeroB;
+        break;
+    case ESQUERDA:
+        sprite_index = sprHeroE;
+        break;
+    case CIMA:
+        sprite_index = sprHeroC;
+        break;
 }
-
-/*
-if(vspd > 0){
-    sprite_index = sprHeroB;
-    image_speed = .2;
-}else if(vspd < 0){
-    sprite_index = sprHeroC;
-    image_speed = .2;
-}
-*/

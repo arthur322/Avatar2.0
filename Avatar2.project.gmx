@@ -28,6 +28,7 @@
     <script>scripts\scr_movimento.gml</script>
     <script>scripts\scr_rolando.gml</script>
     <script>scripts\scr_atacando.gml</script>
+    <script>scripts\scr_visao.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objParede</object>
@@ -36,10 +37,18 @@
     <object>objects\objStats</object>
     <object>objects\objAtaque</object>
     <object>objects\objDano</object>
+    <object>objects\objEfeito</object>
+    <object>objects\objEspada</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
   </rooms>
+  <constants number="4">
+    <constant name="DIREITA">0</constant>
+    <constant name="CIMA">1</constant>
+    <constant name="ESQUERDA">2</constant>
+    <constant name="BAIXO">3</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
