@@ -106,7 +106,7 @@ if(instance_exists(objHero)){
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>64,64</point>
-    <point>64,64</point>
+    <point>32,32</point>
+    <point>32,64</point>
   </PhysicsShapePoints>
 </object>

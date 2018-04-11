@@ -124,7 +124,7 @@ if(hp &lt;= 0){
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_text(x - 6, y - sprite_height / 1.5 ,hp);
+draw_text(x - 6, y - sprite_height / 1.5 ,self.estado);
 </string>
           </argument>
         </arguments>
