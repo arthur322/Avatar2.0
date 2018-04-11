@@ -2,7 +2,7 @@
 <object>
   <spriteName>sprDano</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -28,6 +28,7 @@
             <string>alarm[0] = room_speed / 4;
 criador = noone;
 impulso = 50;
+
 </string>
           </argument>
         </arguments>
@@ -51,10 +52,6 @@ impulso = 50;
           <argument>
             <kind>1</kind>
             <string>instance_destroy();
-if(instance_exists(objHero)){
-    objHero.atacando = false;
-    objHero.estado = scr_movimento;
-}
 </string>
           </argument>
         </arguments>

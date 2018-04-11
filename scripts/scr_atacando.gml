@@ -1,13 +1,36 @@
 //var ataque = instance_create(x, y, objAtaque);
-//ataque.image_xscale = image_xscale;
+scr_teclas();
+
+//Pegando a direção
+dir = point_direction(0, 0, xdir, ydir);
+
+//Pegando a distância
+if(xdir == 0 and ydir == 0){
+    len = 0;
+    image_index = 0;
+}else{
+    len = spd;
+    //scr_visao();
+}
+
+//Velocidade H e V
+hspd = lengthdir_x(len, dir);
+vspd = lengthdir_y(len, dir);
+
+//Movendo 
+phy_position_x += hspd / 2;
+phy_position_y += vspd / 2;
+
+
+//Atacando
 if(atacando == false){
-    xx = lengthdir_x(5, mouse_x);
-    yy = lengthdir_y(5, mouse_y);
+    xx = x + lengthdir_x(32, point_direction(x, y, mouse_x, mouse_y) );
+    yy = y + lengthdir_y(32, point_direction(x, y, mouse_x, mouse_y) );
     
 
     var dano = instance_create(xx, yy, objDano);
     dano.criador = id;
     atacando = true;    
-    //instance_create(x,y, objEspada);
+    instance_create(xx,yy, objEspada);
 
 }

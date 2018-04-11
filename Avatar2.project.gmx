@@ -15,10 +15,11 @@
       <sprite>sprites\sprHeroD</sprite>
       <sprite>sprites\sprHeroE</sprite>
       <sprite>sprites\sprHeroC</sprite>
+      <sprite>sprites\sprEspada</sprite>
     </sprites>
     <sprite>sprites\sprParede</sprite>
     <sprite>sprites\sprEnemy</sprite>
-    <sprite>sprites\sprEspada</sprite>
+    <sprite>sprites\sprEspada2</sprite>
     <sprite>sprites\sprDano</sprite>
   </sprites>
   <backgrounds name="background"/>
@@ -46,7 +47,6 @@
     <object>objects\objHero</object>
     <object>objects\objEnemy</object>
     <object>objects\objStats</object>
-    <object>objects\objAtaque</object>
     <object>objects\objDano</object>
     <object>objects\objEfeito</object>
     <object>objects\objEspada</object>
