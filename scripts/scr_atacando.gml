@@ -18,8 +18,8 @@ hspd = lengthdir_x(len, dir);
 vspd = lengthdir_y(len, dir);
 
 //Movendo 
-phy_position_x += hspd / 2;
-phy_position_y += vspd / 2;
+phy_position_x += hspd / 3;
+phy_position_y += vspd / 3;
 
 
 //Atacando

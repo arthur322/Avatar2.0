@@ -107,10 +107,10 @@ script_execute(estado);
           <argument>
             <kind>1</kind>
             <string>draw_self();
-if(estado == scr_inimigo_atacar)
+/*if(estado == scr_inimigo_atacar)
 draw_line_colour(x, y, objHero.x, objHero.y,c_red, c_red);
 else
-draw_line(x, y, objHero.x, objHero.y);
+draw_line(x, y, objHero.x, objHero.y);*/
 </string>
           </argument>
         </arguments>

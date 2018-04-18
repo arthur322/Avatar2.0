@@ -21,6 +21,7 @@
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprEspada2</sprite>
     <sprite>sprites\sprDano</sprite>
+    <sprite>sprites\sprMorrendo</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -38,8 +39,8 @@
       <script>scripts\scr_inimigo_atacar.gml</script>
       <script>scripts\scr_inimigo_parado.gml</script>
       <script>scripts\scr_inimigo_andando.gml</script>
-      <script>scripts\scr_inimigo_escolher_prox_estado.gml</script>
       <script>scripts\scr_inimigo_existe_player.gml</script>
+      <script>scripts\scr_inimigo_escolher_prox_estado.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -50,6 +51,7 @@
     <object>objects\objDano</object>
     <object>objects\objEfeito</object>
     <object>objects\objEspada</object>
+    <object>objects\objMorrendo</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>

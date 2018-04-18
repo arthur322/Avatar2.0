@@ -8,7 +8,9 @@ if(instance_exists(objHero)){
         targety = objHero.y;
     } else {
         scr_inimigo_escolher_prox_estado();
+        image_blend = c_white;
     }
 } else {
     scr_inimigo_escolher_prox_estado();
+    image_blend = c_white;
 }

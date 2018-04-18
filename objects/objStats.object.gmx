@@ -53,6 +53,7 @@ hp = 3;
 depth = -y;
 
 if(hp &lt;= 0){
+    instance_create(x, y, objMorrendo);
     instance_destroy();
 }
 </string>

@@ -132,8 +132,8 @@ script_execute(estado);
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
     <point>6,12</point>
-    <point>26,12</point>
-    <point>26,56</point>
-    <point>6,56</point>
+    <point>24,12</point>
+    <point>24,44</point>
+    <point>6,44</point>
   </PhysicsShapePoints>
 </object>
