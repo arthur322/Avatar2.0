@@ -31,13 +31,14 @@
       <script>scripts\scr_teclas.gml</script>
     </scripts>
     <scripts name="Player">
-      <script>scripts\scr_rolando.gml</script>
       <script>scripts\scr_movimento.gml</script>
+      <script>scripts\scr_rolando.gml</script>
       <script>scripts\scr_atacando.gml</script>
     </scripts>
     <scripts name="Inimigo">
       <script>scripts\scr_inimigo_atacar.gml</script>
       <script>scripts\scr_inimigo_parado.gml</script>
+      <script>scripts\scr_inimigo_esperando.gml</script>
       <script>scripts\scr_inimigo_andando.gml</script>
       <script>scripts\scr_inimigo_existe_player.gml</script>
       <script>scripts\scr_inimigo_escolher_prox_estado.gml</script>
@@ -47,11 +48,12 @@
     <object>objects\objParede</object>
     <object>objects\objHero</object>
     <object>objects\objEnemy</object>
-    <object>objects\objStats</object>
+    <object>objects\objBase</object>
     <object>objects\objDano</object>
     <object>objects\objEfeito</object>
     <object>objects\objEspada</object>
     <object>objects\objMorrendo</object>
+    <object>objects\objCamera</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>

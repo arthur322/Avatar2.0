@@ -2,7 +2,7 @@
 <object>
   <spriteName>sprDano</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -57,7 +57,7 @@ impulso = 50;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objStats">
+    <event eventtype="4" ename="objBase">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -76,7 +76,9 @@ impulso = 50;
             <kind>1</kind>
             <string>if(other.id != criador){
     other.hp -= 1;
-    var dir = point_direction(criador.x, criador.y, other.x, other.y);
+    if(instance_exists(criador)){
+        var dir = point_direction(criador.x, criador.y, other.x, other.y);
+    }
     var xforce = lengthdir_x(impulso, dir);
     var yforce = lengthdir_y(impulso, dir);
 

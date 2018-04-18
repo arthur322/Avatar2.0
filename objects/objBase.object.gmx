@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>phy_fixed_rotation = true;
 hp = 3;
+maxhp = 3;
+php = 0;
 </string>
           </argument>
         </arguments>
@@ -52,16 +54,20 @@ hp = 3;
             <string>//Profundidade
 depth = -y;
 
+//hp
 if(hp &lt;= 0){
     instance_create(x, y, objMorrendo);
     instance_destroy();
 }
+
+php = (hp / maxhp) * 100;
+
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objStats">
+    <event eventtype="4" ename="objBase">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -125,7 +131,9 @@ if(hp &lt;= 0){
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_text(x - 6, y - sprite_height / 1.5 ,self.estado);
+//draw_text(x - 6, y + sprite_height / 2 ,self.hp);
+draw_healthbar(x - 12, y + sprite_height / 2, x + 12, y + sprite_height / 1.8, php, c_black, c_red, c_lime, 0, true, false);
+
 </string>
           </argument>
         </arguments>

@@ -2,10 +2,10 @@
 <object>
   <spriteName>sprEnemy</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>objStats</parentName>
+  <parentName>objBase</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 image_speed = .2;
-spd = .8;
+spd = 1;
 
 //estados do inimigo
 estado = scr_inimigo_parado;
@@ -36,6 +36,29 @@ alarm[0] = room_speed * irandom_range(2, 5);
 alcance = 192;
 targetx = 0;
 targety = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// esperar pra atacar
 </string>
           </argument>
         </arguments>
@@ -58,7 +81,7 @@ targety = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//me
+            <string>// voltar a perambular
 </string>
           </argument>
         </arguments>
@@ -89,7 +112,7 @@ script_execute(estado);
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="4" ename="objHero">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -106,11 +129,19 @@ script_execute(estado);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
-/*if(estado == scr_inimigo_atacar)
-draw_line_colour(x, y, objHero.x, objHero.y,c_red, c_red);
-else
-draw_line(x, y, objHero.x, objHero.y);*/
+            <string>/// causa dano ao jogador
+
+if( estado != scr_inimigo_esperando ){
+    var dir = point_direction(other.x, other.y, x, y);
+    var xdir = lengthdir_x(1, dir);
+    var ydir = lengthdir_y(1, dir);
+    
+    var dano = instance_create(other.x + xdir, other.y + ydir, objDano);
+    dano.criador = id;
+    estado = scr_inimigo_esperando;
+    alarm[1] = room_speed;
+    
+}
 </string>
           </argument>
         </arguments>

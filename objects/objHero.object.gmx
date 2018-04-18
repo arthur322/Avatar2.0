@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>objStats</parentName>
+  <parentName>objBase</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -27,6 +27,16 @@
             <kind>1</kind>
             <string>///Inicializando variaveis e chamando scripts
 event_inherited();
+
+//hp
+maxhp = 3;
+hp = maxhp;
+php = 0;
+
+//stamina
+maxstamina = 20;
+stamina = maxstamina;
+pstamina = 0;
 
 //velocidades
 spd = 6;
@@ -97,6 +107,13 @@ image_speed = 0.2;
             <string>///Escolher script de estado que esta executando
 event_inherited();
 script_execute(estado);
+
+//stamina
+pstamina = (stamina / maxstamina) * 100;
+
+if(stamina &lt; maxstamina){
+    stamina += .2;
+}
 </string>
           </argument>
         </arguments>
@@ -116,6 +133,30 @@ script_execute(estado);
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_inherited();
+draw_healthbar(x - 12, y + sprite_height / 1.7, x + 12, y + sprite_height / 1.5, pstamina, c_black, c_yellow, c_yellow, 0, true, false);
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>

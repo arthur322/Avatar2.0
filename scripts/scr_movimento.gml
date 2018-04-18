@@ -1,8 +1,9 @@
 ///scr_movimento()
 scr_teclas();
 
-if(rolar && len != 0) {
+if(rolar && len != 0 && stamina >= 10) {
     estado = scr_rolando;
+    stamina -= 10;
     alarm[0] = room_speed / 3;
 }
 

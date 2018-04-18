@@ -27,10 +27,28 @@ if(atacando == false){
     xx = x + lengthdir_x(32, point_direction(x, y, mouse_x, mouse_y) );
     yy = y + lengthdir_y(32, point_direction(x, y, mouse_x, mouse_y) );
     
-
+    
     var dano = instance_create(xx, yy, objDano);
     dano.criador = id;
     atacando = true;    
     instance_create(xx,yy, objEspada);
 
+}
+
+//mudar sprite pra onde ele esta atacando
+scr_visao();
+
+switch(olhando){
+    case DIREITA:
+        sprite_index = sprHeroD;
+        break;
+    case BAIXO:
+        sprite_index = sprHeroB;
+        break;
+    case ESQUERDA:
+        sprite_index = sprHeroE;
+        break;
+    case CIMA:
+        sprite_index = sprHeroC;
+        break;
 }
