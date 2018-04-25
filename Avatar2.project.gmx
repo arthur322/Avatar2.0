@@ -22,8 +22,11 @@
     <sprite>sprites\sprEspada2</sprite>
     <sprite>sprites\sprDano</sprite>
     <sprite>sprites\sprMorrendo</sprite>
+    <sprite>sprites\sprColisao</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Teclas e sprites">
@@ -45,6 +48,7 @@
     </scripts>
   </scripts>
   <objects name="objects">
+    <object>objects\objColisao</object>
     <object>objects\objParede</object>
     <object>objects\objHero</object>
     <object>objects\objEnemy</object>
@@ -59,6 +63,7 @@
     <timeline>timelines\timeline0</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\room1</room>
     <room>rooms\room0</room>
   </rooms>
   <constants number="4">

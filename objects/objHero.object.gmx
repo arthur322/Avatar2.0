@@ -29,7 +29,7 @@
 event_inherited();
 
 //hp
-maxhp = 3;
+maxhp = 10;
 hp = maxhp;
 php = 0;
 

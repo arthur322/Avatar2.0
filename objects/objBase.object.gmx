@@ -62,6 +62,9 @@ if(hp &lt;= 0){
 
 php = (hp / maxhp) * 100;
 
+if(keyboard_check_pressed(ord('R'))){
+    game_restart();
+}
 </string>
           </argument>
         </arguments>

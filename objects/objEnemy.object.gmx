@@ -2,7 +2,7 @@
 <object>
   <spriteName>sprEnemy</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>objBase</parentName>
@@ -138,6 +138,7 @@ if( estado != scr_inimigo_esperando ){
     
     var dano = instance_create(other.x + xdir, other.y + ydir, objDano);
     dano.criador = id;
+    dano.impulso = 100;
     estado = scr_inimigo_esperando;
     alarm[1] = room_speed;
     
