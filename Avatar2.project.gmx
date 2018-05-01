@@ -7,10 +7,6 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Player">
-      <sprite>sprites\sprRolando</sprite>
-      <sprite>sprites\sprHeroHorizontal</sprite>
-      <sprite>sprites\sprHeroParado</sprite>
-      <sprite>sprites\sprHeroAtacando</sprite>
       <sprite>sprites\sprHeroB</sprite>
       <sprite>sprites\sprHeroD</sprite>
       <sprite>sprites\sprHeroE</sprite>
@@ -23,6 +19,8 @@
     <sprite>sprites\sprDano</sprite>
     <sprite>sprites\sprMorrendo</sprite>
     <sprite>sprites\sprColisao</sprite>
+    <sprite>sprites\sprPlaca</sprite>
+    <sprite>sprites\sprPlacaFundo</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -58,10 +56,11 @@
     <object>objects\objEspada</object>
     <object>objects\objMorrendo</object>
     <object>objects\objCamera</object>
+    <object>objects\objEmissor</object>
+    <object>objects\objDialogo</object>
+    <object>objects\objPlaca</object>
   </objects>
-  <timelines name="timelines">
-    <timeline>timelines\timeline0</timeline>
-  </timelines>
+  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\room1</room>
     <room>rooms\room0</room>

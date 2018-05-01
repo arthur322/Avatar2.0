@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>objBase</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -39,7 +39,7 @@ stamina = maxstamina;
 pstamina = 0;
 
 //velocidades
-spd = 6;
+spd = 4;
 hspd = 0;
 vspd = 0;
 
