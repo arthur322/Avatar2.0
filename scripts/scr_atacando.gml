@@ -35,9 +35,11 @@ if(atacando == false){
         case CIMA:
             sprite_index = sprHeroC;
             break;
+        default:
+            sprite_index = sprHeroD;
     }
     
-    
+    image_index = 0;
 }
 
 //Velocidade H e V

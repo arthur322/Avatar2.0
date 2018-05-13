@@ -6,7 +6,7 @@
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
-  <speed>30</speed>
+  <speed>60</speed>
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objCamera" x="352" y="448" name="inst_E37D0FB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCamera" x="320" y="480" name="inst_E37D0FB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objHero" x="384" y="512" name="inst_5F37277D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="37" y="597" name="inst_5E41BBF1" locked="0" code="" scaleX="14" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="32" y="416" name="inst_E64F6A72" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
@@ -61,7 +61,6 @@
     <instance objName="objColisao" x="434" y="504" name="inst_05EC26FA" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="442" y="505" name="inst_83490FFF" locked="0" code="" scaleX="2.5806450843811" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="492" y="512" name="inst_2AD411A0" locked="0" code="" scaleX="1" scaleY="7.65625" colour="4294967295" rotation="0"/>
-    <instance objName="objColisao" x="497" y="722" name="inst_58ACC3F7" locked="0" code="" scaleX="4.875" scaleY="1.09677422046661" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="627" y="504" name="inst_ED758827" locked="0" code="" scaleX="1.29032254219055" scaleY="7.21875" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="635" y="505" name="inst_AE975DD8" locked="0" code="" scaleX="9.87096786499023" scaleY="1.06451618671417" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="448" y="320" name="inst_D8E05D04" locked="0" code="" scaleX="9" scaleY="2" colour="4294967295" rotation="0"/>
@@ -71,7 +70,9 @@
     <instance objName="objEnemy" x="256" y="256" name="inst_8E00B2C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnemy" x="384" y="256" name="inst_9B041EE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnemy" x="608" y="224" name="inst_03524DA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlaca" x="192" y="544" name="inst_3E6E2834" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlaca" x="192" y="448" name="inst_3E6E2834" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_controle" x="288" y="480" name="inst_42B96F19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mudar_fase" x="501" y="719" name="inst_4E9C8D3E" locked="0" code="nova_fase = room0;&#xA;novo_x = 496;&#xA;novo_y = 64;" scaleX="4.48387098312378" scaleY="0.451612889766693" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

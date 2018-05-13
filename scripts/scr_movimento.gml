@@ -1,25 +1,25 @@
 ///scr_movimento()
-scr_teclas();
+//scr_teclas();
 
-if(rolar && len != 0 && stamina >= 10) {
+if(obj_controle.rolar && len != 0 && stamina >= 10) {
     estado = scr_rolando;
     stamina -= 10;
     alarm[0] = room_speed / 3;
 }
 
-if(atacar){
+if(obj_controle.atacar){
     image_index = 0;
     estado = scr_atacando;
 }
 
 
 //Pegando a direção
-dir = point_direction(0, 0, xdir, ydir);
+dir = point_direction(0, 0, obj_controle.xdir, obj_controle.ydir);
 
 //Pegando a distância
-if(xdir == 0 and ydir == 0){
+if(obj_controle.xdir == 0 and obj_controle.ydir == 0){
     len = 0;
-    image_index = 0;
+    image_index = 1;
 }else{
     len = spd;
     scr_visao();
@@ -34,7 +34,7 @@ phy_position_x += hspd;
 phy_position_y += vspd;
 
 //Controles de sprites
-image_speed = sign(len) * 0.5;
+image_speed = sign(len) * 0.2;
 
 
 switch(olhando){

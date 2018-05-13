@@ -5,6 +5,7 @@ cima = keyboard_check(vk_up) or keyboard_check(ord('W'));
 baixo = keyboard_check(vk_down) or keyboard_check(ord('S'));
 rolar = keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord('Y'));
 atacar = keyboard_check_pressed(ord('X')) or mouse_check_button_pressed(mb_left);
+pausar = keyboard_check_pressed(vk_escape) or keyboard_check_pressed(ord('P'));
 
 //Pegando o eixo
 xdir = (direita - esquerda);
@@ -16,4 +17,5 @@ if(gamepad_is_connected(0)){
     xdir = gamepad_axis_value(0, gp_axislh);
     ydir = gamepad_axis_value(0, gp_axislv);
     rolar = gamepad_button_check_pressed(0, gp_face1);
+    pausar = gamepad_button_check_pressed(0, gp_start);
 }

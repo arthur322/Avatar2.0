@@ -21,6 +21,7 @@
     <sprite>sprites\sprColisao</sprite>
     <sprite>sprites\sprPlaca</sprite>
     <sprite>sprites\sprPlacaFundo</sprite>
+    <sprite>sprites\spr_mudar_fase</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -46,24 +47,32 @@
     </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\objColisao</object>
-    <object>objects\objParede</object>
-    <object>objects\objHero</object>
+    <objects name="Player">
+      <object>objects\objHero</object>
+      <object>objects\objEspada</object>
+      <object>objects\objDano</object>
+      <object>objects\objEfeito</object>
+      <object>objects\objCamera</object>
+    </objects>
+    <objects name="Dialogo">
+      <object>objects\objPlaca</object>
+      <object>objects\objDialogo</object>
+      <object>objects\objEmissor</object>
+    </objects>
+    <objects name="Utilitarios">
+      <object>objects\objColisao</object>
+      <object>objects\objParede</object>
+      <object>objects\objBase</object>
+      <object>objects\objMorrendo</object>
+      <object>objects\obj_controle</object>
+      <object>objects\obj_mudar_fase</object>
+    </objects>
     <object>objects\objEnemy</object>
-    <object>objects\objBase</object>
-    <object>objects\objDano</object>
-    <object>objects\objEfeito</object>
-    <object>objects\objEspada</object>
-    <object>objects\objMorrendo</object>
-    <object>objects\objCamera</object>
-    <object>objects\objEmissor</object>
-    <object>objects\objDialogo</object>
-    <object>objects\objPlaca</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\room1</room>
     <room>rooms\room0</room>
+    <room>rooms\rm_pause</room>
   </rooms>
   <constants number="4">
     <constant name="DIREITA">0</constant>

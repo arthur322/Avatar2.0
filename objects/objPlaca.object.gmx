@@ -28,11 +28,13 @@
             <string>/// Inicializar variaveis
 dialogo = noone;
 pagina_dialogo = 0;
-xoffset = -64;
+xoffset = -128;
 yoffset = -90;
-text[0] = "Primeiro diálogo...";
-text[1] = "Segundo diálogo...";
-text[2] = "Terceiro diálogo...";
+
+// Mensagens por pagina
+text[0] = "Primeiro dialogo... Segundo dialogo... Segundo dialogo...";
+text[1] = "Segundo dialogo...";
+text[2] = "Terceiro dialogo...";
 </string>
           </argument>
         </arguments>
@@ -51,9 +53,9 @@ text[2] = "Terceiro diálogo...";
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>0,20</point>
-    <point>32,20</point>
-    <point>32,32</point>
-    <point>0,32</point>
+    <point>0,18</point>
+    <point>32,18</point>
+    <point>32,26</point>
+    <point>0,26</point>
   </PhysicsShapePoints>
 </object>
