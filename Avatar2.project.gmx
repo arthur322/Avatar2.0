@@ -25,6 +25,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\bg_1</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -64,12 +65,13 @@
       <object>objects\objParede</object>
       <object>objects\objBase</object>
       <object>objects\objMorrendo</object>
-      <object>objects\obj_controle</object>
       <object>objects\obj_mudar_fase</object>
+      <object>objects\obj_controle</object>
     </objects>
     <object>objects\objEnemy</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room3</room>
     <room>rooms\room1</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
