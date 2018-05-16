@@ -119,7 +119,7 @@
     <instance objName="objColisao" x="764" y="29" name="inst_027B2522" locked="0" code="" scaleX="1.125" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPoste" x="612" y="116" name="inst_6591C30F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objArvore3" x="588" y="142" name="inst_96975142" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mudar_fase" x="-13" y="384" name="inst_C36B4AFB" locked="0" code="nova_fase = room3;&#xA;novo_x = 864;&#xA;novo_y = 416;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mudar_fase" x="-31" y="387" name="inst_C36B4AFB" locked="0" code="nova_fase = room3;&#xA;novo_x = 864;&#xA;novo_y = 416;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objCamera" x="160" y="448" name="inst_EAC1BFD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnemy" x="407" y="380" name="inst_848AEA64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnemy" x="522" y="262" name="inst_6C5DC65E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

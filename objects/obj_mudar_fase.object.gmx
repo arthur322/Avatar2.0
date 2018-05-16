@@ -3,8 +3,8 @@
   <spriteName>spr_mudar_fase</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
-  <persistent>0</persistent>
+  <depth>-80000</depth>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -28,6 +28,80 @@
             <string>novo_x = 0;
 novo_y = 0;
 nova_fase = noone;
+
+/////////////
+
+fade_ready = false; 
+fade_amount = 0.2; //or whatever you'd like. This will be the amount added each update
+fade_alpha = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objHero">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>fade_ready = true;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if( fade_ready == true )
+{
+    draw_set_color(c_black);
+    draw_set_alpha(fade_alpha);
+    draw_rectangle(view_xview[0],view_yview[0], view_xview[0]+view_wview[0],view_yview[0]+view_hview[0], false);
+    draw_set_alpha(1);
+    fade_alpha += fade_amount;
+    if( fade_alpha &gt; 1 ){ 
+        fade_alpha = 1;
+        room_goto(nova_fase); 
+        objHero.x = novo_x;
+        objHero.y = novo_y;
+        fade_amount *= -1;
+    }
+    if( fade_alpha &lt;= 0){
+        fade_ready = false;
+        instance_destroy();
+    }
+}
+draw_text(view_xview[0] + 32, view_yview[0] +32, fade_ready);
+draw_text(view_xview[0] + 32, view_yview[0] + 64, fade_amount);
+
 </string>
           </argument>
         </arguments>

@@ -69,10 +69,10 @@
     <instance objName="objColisao" x="644" y="319" name="inst_017A88EC" locked="0" code="" scaleX="5.34375" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="725" y="338" name="inst_3C434C3A" locked="0" code="" scaleX="3.57999992370605" scaleY="0.9375" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="768" y="448" name="inst_5B4F10D0" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objHero" x="256" y="178" name="inst_AAF5835D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objHero" x="864" y="416" name="inst_AAF5835D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_controle" x="288" y="160" name="inst_BAAF963C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCamera" x="288" y="192" name="inst_769E850F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mudar_fase" x="896" y="384" name="inst_B0B6EE1F" locked="0" code="nova_fase = room4;&#xA;novo_x = 32;&#xA;novo_y = 416;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mudar_fase" x="928" y="384" name="inst_B0B6EE1F" locked="0" code="nova_fase = room4;&#xA;novo_x = 32;&#xA;novo_y = 416;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="477" y="399" name="inst_E6555245" locked="0" code="" scaleX="6.51999998092651" scaleY="1.3125" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="664" y="433" name="inst_651378AB" locked="0" code="" scaleX="4.44999980926514" scaleY="1.03125" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="829" y="367" name="inst_C5F5D3A8" locked="0" code="" scaleX="3.09999990463257" scaleY="1.06451618671417" colour="4294967295" rotation="0"/>

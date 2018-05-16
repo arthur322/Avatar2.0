@@ -138,7 +138,7 @@ if( estado != scr_inimigo_esperando ){
     
     var dano = instance_create(other.x + xdir, other.y + ydir, objDano);
     dano.criador = id;
-    dano.impulso = 100;
+    dano.impulso = 50;
     estado = scr_inimigo_esperando;
     alarm[1] = room_speed;
     

@@ -136,11 +136,13 @@ if(stamina &lt; maxstamina){
           <argument>
             <kind>1</kind>
             <string>///Mudar de fase caso ela exista
+/*
 if(room_exists(other.nova_fase)){
     room_goto(other.nova_fase);
     x = other.novo_x;
     y = other.novo_y;
 }
+*/
 </string>
           </argument>
         </arguments>
@@ -212,7 +214,7 @@ draw_healthbar(x - 12, y + sprite_height / 1.7, x + 12, y + sprite_height / 1.5,
   </events>
   <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
-  <PhysicsObjectShape>1</PhysicsObjectShape>
+  <PhysicsObjectShape>0</PhysicsObjectShape>
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
@@ -222,9 +224,7 @@ draw_healthbar(x - 12, y + sprite_height / 1.7, x + 12, y + sprite_height / 1.5,
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>6,12</point>
-    <point>24,12</point>
-    <point>24,44</point>
-    <point>6,44</point>
+    <point>14,28</point>
+    <point>8,18</point>
   </PhysicsShapePoints>
 </object>

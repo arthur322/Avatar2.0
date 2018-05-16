@@ -5,12 +5,29 @@ if(obj_controle.rolar && len != 0 && stamina >= 10) {
     estado = scr_rolando;
     stamina -= 10;
     alarm[0] = room_speed / 3;
+}else if(distance_to_object(objPlaca) < 64 && obj_controle.rolar){
+    with(objPlaca){
+        if(!instance_exists(objDialogo)){
+            dialog = instance_create(self.x + xoffset, self.y + yoffset, objDialogo);
+            dialog.text = text;
+        } else {
+            dialog.text_page++;
+            dialog.text_count = 0;
+            if(dialog.text_page > array_length_1d(dialog.text) - 1){
+                with(dialog){
+                    instance_destroy();
+                }
+            }
+        }
+    }
 }
 
 if(obj_controle.atacar){
     image_index = 0;
     estado = scr_atacando;
 }
+
+
 
 
 //Pegando a direção
