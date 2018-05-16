@@ -13,8 +13,14 @@
       <sprite>sprites\sprHeroC</sprite>
       <sprite>sprites\sprEspada</sprite>
     </sprites>
-    <sprite>sprites\sprParede</sprite>
+    <sprites name="fase">
+      <sprite>sprites\sprArvore1</sprite>
+      <sprite>sprites\sprArvore2</sprite>
+      <sprite>sprites\sprArvore3</sprite>
+      <sprite>sprites\sprPoste</sprite>
+    </sprites>
     <sprite>sprites\sprEnemy</sprite>
+    <sprite>sprites\sprParede</sprite>
     <sprite>sprites\sprEspada2</sprite>
     <sprite>sprites\sprDano</sprite>
     <sprite>sprites\sprMorrendo</sprite>
@@ -25,7 +31,8 @@
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
-    <background>background\bg_1</background>
+    <background>background\bg_1_1</background>
+    <background>background\bg_1_2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -68,10 +75,17 @@
       <object>objects\obj_mudar_fase</object>
       <object>objects\obj_controle</object>
     </objects>
+    <objects name="Fase">
+      <object>objects\objArvore1</object>
+      <object>objects\objArvore2</object>
+      <object>objects\objArvore3</object>
+      <object>objects\objPoste</object>
+    </objects>
     <object>objects\objEnemy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room3</room>
+    <room>rooms\room4</room>
     <room>rooms\room1</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
