@@ -32,7 +32,7 @@ nova_fase = noone;
 /////////////
 
 fade_ready = false; 
-fade_amount = 0.2; //or whatever you'd like. This will be the amount added each update
+fade_amount = 0.1; //or whatever you'd like. This will be the amount added each update
 fade_alpha = 0;
 </string>
           </argument>
@@ -99,8 +99,6 @@ fade_alpha = 0;
         instance_destroy();
     }
 }
-draw_text(view_xview[0] + 32, view_yview[0] +32, fade_ready);
-draw_text(view_xview[0] + 32, view_yview[0] + 64, fade_amount);
 
 </string>
           </argument>
