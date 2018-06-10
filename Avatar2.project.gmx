@@ -28,6 +28,7 @@
     <sprite>sprites\sprPlaca</sprite>
     <sprite>sprites\sprPlacaFundo</sprite>
     <sprite>sprites\spr_mudar_fase</sprite>
+    <sprite>sprites\sprPowerBar</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -82,6 +83,7 @@
       <object>objects\objPoste</object>
     </objects>
     <object>objects\objEnemy</object>
+    <object>objects\objPowerBar</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room3</room>
