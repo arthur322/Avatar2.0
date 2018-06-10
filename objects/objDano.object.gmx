@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = room_speed / 4;
+            <string>alarm[0] = room_speed / 3;
 criador = noone;
 impulso = 50;
 
@@ -75,20 +75,19 @@ impulso = 50;
           <argument>
             <kind>1</kind>
             <string>if(other.id != criador){
-    other.hp -= 1;
-    if(instance_exists(criador)){
-        var dir = point_direction(criador.x, criador.y, other.x, other.y);
-    
-        var xforce = lengthdir_x(impulso, dir);
-        var yforce = lengthdir_y(impulso, dir);
+    if(instance_exists(criador) and object_get_name(other.object_index) != object_get_name(criador.object_index)){
+        other.hp -= 1;
+        if(instance_exists(criador)){
+            var dir = point_direction(criador.x, criador.y, other.x, other.y);
         
-        with(other){
-            physics_apply_impulse(x, y, xforce, yforce);
+            var xforce = lengthdir_x(impulso, dir);
+            var yforce = lengthdir_y(impulso, dir);
+            
+            with(other){
+                physics_apply_impulse(x, y, xforce, yforce);
+            }   
         }
-        
     }
-    
-    
     
 }
 </string>

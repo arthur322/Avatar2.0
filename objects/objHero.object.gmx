@@ -50,6 +50,7 @@ dir = 0;
 
 //ataque
 atacando = false;
+espada = 1;
 
 //melhor controle de sprite
 olhando = DIREITA;

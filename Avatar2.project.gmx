@@ -12,6 +12,7 @@
       <sprite>sprites\sprHeroE</sprite>
       <sprite>sprites\sprHeroC</sprite>
       <sprite>sprites\sprEspada</sprite>
+      <sprite>sprites\sprEspada2</sprite>
     </sprites>
     <sprites name="fase">
       <sprite>sprites\sprArvore1</sprite>
@@ -21,7 +22,6 @@
     </sprites>
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprParede</sprite>
-    <sprite>sprites\sprEspada2</sprite>
     <sprite>sprites\sprDano</sprite>
     <sprite>sprites\sprMorrendo</sprite>
     <sprite>sprites\sprColisao</sprite>
@@ -86,9 +86,9 @@
     <object>objects\objPowerBar</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room1</room>
     <room>rooms\room3</room>
     <room>rooms\room4</room>
-    <room>rooms\room1</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
   </rooms>

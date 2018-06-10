@@ -6,14 +6,17 @@ len = spd;
 
 //Atacando
 if(atacando == false){
-    xx = x + lengthdir_x(32, point_direction(x, y, mouse_x, mouse_y) );
-    yy = y + lengthdir_y(32, point_direction(x, y, mouse_x, mouse_y) );
+    xx = x + lengthdir_x(16, point_direction(x, y, mouse_x, mouse_y) );
+    yy = y + lengthdir_y(16, point_direction(x, y, mouse_x, mouse_y) );
     
     
     var dano = instance_create(xx, yy, objDano);
     dano.criador = id;
     atacando = true;    
-    instance_create(xx, yy, objEspada);
+    instance_create(x + lengthdir_x(32, point_direction(x, y, mouse_x, mouse_y) ), 
+                    y + lengthdir_y(32, point_direction(x, y, mouse_x, mouse_y) ), 
+                    objEspada);
+    
 
     //Pegando a direção
     dir = point_direction(x, y, dano.x, dano.y);

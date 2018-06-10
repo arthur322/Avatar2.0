@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>image_angle = point_direction(objHero.x,objHero.y, mouse_x, mouse_y);
 image_speed = .3;
+image_yscale = objHero.espada;
+
+if(objHero.espada == 1) objHero.espada = -1 else objHero.espada = 1
 </string>
           </argument>
         </arguments>
