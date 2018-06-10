@@ -45,8 +45,8 @@ depth = -y;
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>16,32</point>
-    <point>32,32</point>
+    <point>16,40</point>
+    <point>32,40</point>
     <point>32,48</point>
     <point>16,48</point>
   </PhysicsShapePoints>

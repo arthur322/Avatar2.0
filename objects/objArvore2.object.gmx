@@ -8,7 +8,7 @@
   <parentName>objArvore1</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events/>
-  <PhysicsObject>0</PhysicsObject>
+  <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>1</PhysicsObjectShape>
   <PhysicsObjectDensity>0</PhysicsObjectDensity>
@@ -19,5 +19,10 @@
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,64</point>
+    <point>88,64</point>
+    <point>88,128</point>
+    <point>0,128</point>
+  </PhysicsShapePoints>
 </object>

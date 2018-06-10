@@ -6,8 +6,8 @@ len = spd;
 
 //Atacando
 if(atacando == false){
-    xx = x + lengthdir_x(16, point_direction(x, y, mouse_x, mouse_y) );
-    yy = y + lengthdir_y(16, point_direction(x, y, mouse_x, mouse_y) );
+    xx = x + lengthdir_x(24, point_direction(x, y, mouse_x, mouse_y) );
+    yy = y + lengthdir_y(24, point_direction(x, y, mouse_x, mouse_y) );
     
     
     var dano = instance_create(xx, yy, objDano);

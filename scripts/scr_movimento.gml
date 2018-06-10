@@ -5,7 +5,7 @@ if(obj_controle.rolar && len != 0 && stamina >= 10) {
     estado = scr_rolando;
     stamina -= 10;
     alarm[0] = room_speed / 3;
-}else if(distance_to_object(objPlaca) < 64 && obj_controle.rolar){
+}else if(distance_to_object(objPlaca) < 16 && obj_controle.rolar){
     with(objPlaca){
         if(!instance_exists(objDialogo)){
             dialog = instance_create(self.x + xoffset, self.y + yoffset, objDialogo);
