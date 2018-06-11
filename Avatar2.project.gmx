@@ -22,6 +22,7 @@
       <sprite>sprites\sprArvore4</sprite>
       <sprite>sprites\sprTelhado</sprite>
       <sprite>sprites\sprTelhado2</sprite>
+      <sprite>sprites\sprTelhado3</sprite>
     </sprites>
     <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprParede</sprite>
@@ -39,6 +40,7 @@
     <background>background\bg_1_2</background>
     <background>background\bg_1_3</background>
     <background>background\bg_1_4</background>
+    <background>background\bg_1_5</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -89,6 +91,7 @@
       <object>objects\objPoste</object>
       <object>objects\objTelhado</object>
       <object>objects\objTelhado2</object>
+      <object>objects\objTelhado3</object>
     </objects>
     <object>objects\objEnemy</object>
     <object>objects\objPowerBar</object>
@@ -98,6 +101,7 @@
     <room>rooms\room_2</room>
     <room>rooms\room_3</room>
     <room>rooms\room_4</room>
+    <room>rooms\room_5</room>
     <room>rooms\room1</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
