@@ -6,6 +6,7 @@ baixo = keyboard_check(vk_down) or keyboard_check(ord('S'));
 rolar = keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord('Y'));
 atacar = keyboard_check_pressed(ord('X')) or mouse_check_button_pressed(mb_left);
 pausar = keyboard_check_pressed(vk_escape) or keyboard_check_pressed(ord('P'));
+magia = mouse_check_button_pressed(mb_right);
 
 //Pegando o eixo
 xdir = (direita - esquerda);

@@ -72,7 +72,7 @@
     <instance objName="objHero" x="257" y="177" name="inst_AAF5835D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_controle" x="288" y="160" name="inst_BAAF963C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCamera" x="288" y="192" name="inst_769E850F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mudar_fase" x="928" y="384" name="inst_B0B6EE1F" locked="0" code="/*nova_fase = room_2;&#xA;novo_x = 32;&#xA;novo_y = 416;*/&#xA;&#xA;nova_fase = room_4;&#xA;novo_x = 480;&#xA;novo_y = 128;&#xA;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mudar_fase" x="928" y="384" name="inst_B0B6EE1F" locked="0" code="/*nova_fase = room_2;&#xA;novo_x = 32;&#xA;novo_y = 416;*/&#xA;&#xA;nova_fase = room_5;&#xA;novo_x = 320;&#xA;novo_y = 672;&#xA;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="477" y="399" name="inst_E6555245" locked="0" code="" scaleX="6.51999998092651" scaleY="1.3125" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="664" y="433" name="inst_651378AB" locked="0" code="" scaleX="4.44999980926514" scaleY="1.03125" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="829" y="367" name="inst_C5F5D3A8" locked="0" code="" scaleX="3.09999990463257" scaleY="1.06451618671417" colour="4294967295" rotation="0"/>
@@ -97,6 +97,7 @@
     <instance objName="objPoste" x="346" y="265" name="inst_25A353AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objArvore1" x="262" y="363" name="inst_E0B4508B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objArvore1" x="286" y="387" name="inst_0F036DE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnemy" x="544" y="352" name="inst_6DB4C7CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

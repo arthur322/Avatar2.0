@@ -27,6 +27,16 @@ if(obj_controle.atacar){
     estado = scr_atacando;
 }
 
+if(obj_controle.magia){
+    var p = instance_create(x, y, objProjetil);
+    var xforce = lengthdir_x(35, point_direction(x, y, mouse_x, mouse_y));
+    var yforce = lengthdir_y(35, point_direction(x, y, mouse_x, mouse_y));
+    p.creator = id;
+    with(p){
+        physics_apply_impulse(x,y,xforce,yforce);
+    }
+}
+
 
 
 

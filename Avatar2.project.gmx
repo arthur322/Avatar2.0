@@ -41,6 +41,7 @@
     <background>background\bg_1_3</background>
     <background>background\bg_1_4</background>
     <background>background\bg_1_5</background>
+    <background>background\bg_1_6</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -95,6 +96,7 @@
     </objects>
     <object>objects\objEnemy</object>
     <object>objects\objPowerBar</object>
+    <object>objects\objProjetil</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_1</room>
@@ -102,6 +104,7 @@
     <room>rooms\room_3</room>
     <room>rooms\room_4</room>
     <room>rooms\room_5</room>
+    <room>rooms\room_6</room>
     <room>rooms\room1</room>
     <room>rooms\room0</room>
     <room>rooms\rm_pause</room>
