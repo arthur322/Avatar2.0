@@ -4,8 +4,10 @@ if(instance_exists(objHero)){
     var dis = point_distance(x, y, objHero.x, objHero.y);
     if (dis < alcance) {
         estado = scr_inimigo_atacar;
-        targetx = objHero.x;
-        targety = objHero.y;
+        
+        var dir = point_direction(x, y, objHero.x, objHero.y);
+        xaxis = lengthdir_x(1,dir);
+        yaxis = lengthdir_y(1,dir);
     } else {
         scr_inimigo_escolher_prox_estado();
         image_blend = c_white;

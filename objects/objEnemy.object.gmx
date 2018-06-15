@@ -34,8 +34,8 @@ estado = scr_inimigo_parado;
 //alarm e variáveis inicializando os estados
 alarm[0] = room_speed * irandom_range(2, 5);
 alcance = 192;
-targetx = 0;
-targety = 0;
+xaxis = 0;
+yaxis = 0;
 </string>
           </argument>
         </arguments>

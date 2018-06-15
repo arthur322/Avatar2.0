@@ -1,4 +1,5 @@
-///scr_visao
+///scr_visao(dir)
+var dir = argument0;
 if(estado != scr_atacando){
     olhando = round(dir / 90);
 }

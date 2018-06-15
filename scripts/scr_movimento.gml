@@ -49,7 +49,7 @@ if(obj_controle.xdir == 0 and obj_controle.ydir == 0){
     image_index = 1;
 }else{
     len = spd;
-    scr_visao();
+    scr_visao(dir);
 }
 
 //Velocidade H e V

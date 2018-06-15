@@ -24,8 +24,14 @@
       <sprite>sprites\sprTelhado2</sprite>
       <sprite>sprites\sprTelhado3</sprite>
     </sprites>
-    <sprite>sprites\sprEnemy</sprite>
+    <sprites name="Bosses">
+      <sprite>sprites\spr_Terra_B</sprite>
+      <sprite>sprites\spr_Terra_C</sprite>
+      <sprite>sprites\spr_Terra_D</sprite>
+      <sprite>sprites\spr_Terra_E</sprite>
+    </sprites>
     <sprite>sprites\sprParede</sprite>
+    <sprite>sprites\sprEnemy</sprite>
     <sprite>sprites\sprDano</sprite>
     <sprite>sprites\sprMorrendo</sprite>
     <sprite>sprites\sprColisao</sprite>
@@ -61,6 +67,7 @@
       <script>scripts\scr_inimigo_andando.gml</script>
       <script>scripts\scr_inimigo_existe_player.gml</script>
       <script>scripts\scr_inimigo_escolher_prox_estado.gml</script>
+      <script>scripts\scr_inimigo_axis.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -95,6 +102,7 @@
       <object>objects\objTelhado3</object>
     </objects>
     <object>objects\objEnemy</object>
+    <object>objects\objBossTerra</object>
     <object>objects\objPowerBar</object>
     <object>objects\objProjetil</object>
   </objects>

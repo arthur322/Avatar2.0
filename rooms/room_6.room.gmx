@@ -42,25 +42,34 @@
   </backgrounds>
   <views>
     <view visible="-1" objName="objCamera" xview="0" yview="0" wview="800" hview="600" xport="0" yport="0" wport="800" hport="600" hborder="400" vborder="300" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objColisao" x="68" y="96" name="inst_0602DEE0" locked="0" code="" scaleX="1.0625" scaleY="22" colour="4294967295" rotation="0"/>
-    <instance objName="objColisao" x="578" y="96" name="inst_AC371145" locked="0" code="" scaleX="1.0625" scaleY="22" colour="4294967295" rotation="0"/>
+    <instance objName="objColisao" x="68" y="96" name="inst_0602DEE0" locked="0" code="" scaleX="1.12903225421906" scaleY="16.28125" colour="4294967295" rotation="0"/>
+    <instance objName="objColisao" x="578" y="96" name="inst_AC371145" locked="0" code="" scaleX="1.09677422046661" scaleY="16.125" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="85" y="160" name="inst_8C326E41" locked="0" code="" scaleX="15.9032258987427" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="119" y="288" name="inst_27C62D18" locked="0" code="" scaleX="2.74193549156189" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="540" y="504" name="inst_556CE82A" locked="0" code="" scaleX="1.44000005722046" scaleY="3.375" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="89" y="505" name="inst_2FAAFEE5" locked="0" code="" scaleX="1.71000003814697" scaleY="3.48387098312378" colour="4294967295" rotation="0"/>
-    <instance objName="objColisao" x="80" y="720" name="inst_AE537495" locked="0" code="" scaleX="4.21875" scaleY="1.23000001907349" colour="4294967295" rotation="0"/>
+    <instance objName="objColisao" x="70" y="720" name="inst_AE537495" locked="0" code="" scaleX="4.59375" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="469" y="719" name="inst_3C1B5259" locked="0" code="" scaleX="4.44999980926514" scaleY="1.29032254219055" colour="4294967295" rotation="0"/>
     <instance objName="objColisao" x="162" y="756" name="inst_57786E02" locked="0" code="" scaleX="10.6499996185303" scaleY="1.48387098312378" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mudar_fase" x="289" y="736" name="inst_C10D80CE" locked="0" code="nova_fase = room_5;&#xA;novo_x = 340;&#xA;novo_y = 704;&#xA;" scaleX="3.29032254219055" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objColisao" x="218" y="287" name="inst_D5AE5F19" locked="0" code="" scaleX="2.19354844093323" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objColisao" x="398" y="289" name="inst_601666D6" locked="0" code="" scaleX="2.15625" scaleY="1.12903225421906" colour="4294967295" rotation="0"/>
+    <instance objName="objColisao" x="256" y="288" name="inst_22850029" locked="0" code="" scaleX="1.03125" scaleY="1.6875" colour="4294967295" rotation="0"/>
+    <instance objName="objColisao" x="397" y="308" name="inst_87922FE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objColisao" x="272" y="320" name="inst_752664E2" locked="0" code="" scaleX="0.53125" scaleY="2.34375" colour="4294967295" rotation="0"/>
+    <instance objName="objColisao" x="397" y="326" name="inst_2A3D4B5C" locked="0" code="" scaleX="0.483870953321457" scaleY="2.15625" colour="4294967295" rotation="0"/>
+    <instance objName="objColisao" x="218" y="186" name="inst_7A755E91" locked="0" code="" scaleX="0.21875" scaleY="3.3125" colour="4294967295" rotation="0"/>
+    <instance objName="objColisao" x="463" y="190" name="inst_6B72A5BA" locked="0" code="" scaleX="0.129032254219055" scaleY="3.1875" colour="4294967295" rotation="0"/>
+    <instance objName="objColisao" x="612" y="608" name="inst_C59AE30E" locked="0" code="" scaleX="0.53125" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="objColisao" x="41" y="614" name="inst_D41B7680" locked="0" code="" scaleX="1.03225803375244" scaleY="4.8125" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

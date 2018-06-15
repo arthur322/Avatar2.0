@@ -23,7 +23,7 @@ if(atacando == false){
     
     
     //mudar sprite pra onde ele esta atacando
-    scr_visao();
+    scr_visao(dir);
     
     switch(olhando){
         case DIREITA:
